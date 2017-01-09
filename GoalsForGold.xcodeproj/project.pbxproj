@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		39F3365F1E21A7DB00FF1852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F3365E1E21A7DB00FF1852 /* AppDelegate.swift */; };
-		39F336611E21A7DB00FF1852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F336601E21A7DB00FF1852 /* ViewController.swift */; };
 		39F336641E21A7DB00FF1852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F336621E21A7DB00FF1852 /* Main.storyboard */; };
 		39F336661E21A7DB00FF1852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F336651E21A7DB00FF1852 /* Assets.xcassets */; };
 		39F336691E21A7DB00FF1852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F336671E21A7DB00FF1852 /* LaunchScreen.storyboard */; };
+		39F336711E22CC8400FF1852 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F336701E22CC8400FF1852 /* WelcomeScreen.swift */; };
+		39F336731E24227800FF1852 /* Bariol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39F336721E24227800FF1852 /* Bariol.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39F3365B1E21A7DB00FF1852 /* GoalsForGold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalsForGold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F3365E1E21A7DB00FF1852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39F336601E21A7DB00FF1852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39F336631E21A7DB00FF1852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39F336651E21A7DB00FF1852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39F336681E21A7DB00FF1852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39F3366A1E21A7DB00FF1852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F336701E22CC8400FF1852 /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		39F336721E24227800FF1852 /* Bariol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				39F3365E1E21A7DB00FF1852 /* AppDelegate.swift */,
-				39F336601E21A7DB00FF1852 /* ViewController.swift */,
 				39F336621E21A7DB00FF1852 /* Main.storyboard */,
 				39F336651E21A7DB00FF1852 /* Assets.xcassets */,
 				39F336671E21A7DB00FF1852 /* LaunchScreen.storyboard */,
+				39F336721E24227800FF1852 /* Bariol.ttf */,
 				39F3366A1E21A7DB00FF1852 /* Info.plist */,
+				39F336701E22CC8400FF1852 /* WelcomeScreen.swift */,
 			);
 			path = GoalsForGold;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 				39F336691E21A7DB00FF1852 /* LaunchScreen.storyboard in Resources */,
 				39F336661E21A7DB00FF1852 /* Assets.xcassets in Resources */,
 				39F336641E21A7DB00FF1852 /* Main.storyboard in Resources */,
+				39F336731E24227800FF1852 /* Bariol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39F336611E21A7DB00FF1852 /* ViewController.swift in Sources */,
+				39F336711E22CC8400FF1852 /* WelcomeScreen.swift in Sources */,
 				39F3365F1E21A7DB00FF1852 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

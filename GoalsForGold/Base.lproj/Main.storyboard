@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gc5-ap-SDV">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bariol.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Welcome Screen-->
+        <scene sceneID="706-RB-Qim">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gc5-ap-SDV" customClass="WelcomeScreen" customModule="GoalsForGold" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="XTH-WT-G5b"/>
+                        <viewControllerLayoutGuide type="bottom" id="4pI-cJ-YKX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="Tub-eC-pVT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQ9-2r-WBj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goals For Gold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wG-eu-W0c">
+                                        <rect key="frame" x="66" y="68" width="188" height="28"/>
+                                        <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7wG-eu-W0c" firstAttribute="centerX" secondItem="rQ9-2r-WBj" secondAttribute="centerX" id="VBE-1g-Vdh"/>
+                                    <constraint firstItem="7wG-eu-W0c" firstAttribute="centerY" secondItem="rQ9-2r-WBj" secondAttribute="centerY" id="a87-zm-NSd"/>
+                                    <constraint firstItem="7wG-eu-W0c" firstAttribute="leading" secondItem="rQ9-2r-WBj" secondAttribute="leading" constant="66" id="rjV-6K-X9X"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7x-95-QxA">
+                                <rect key="frame" x="0.0" y="165" width="320" height="403"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4pI-cJ-YKX" firstAttribute="top" secondItem="a7x-95-QxA" secondAttribute="bottom" id="1f6-5i-vDp"/>
+                            <constraint firstItem="a7x-95-QxA" firstAttribute="leading" secondItem="Tub-eC-pVT" secondAttribute="leading" id="3xF-AW-gJU"/>
+                            <constraint firstItem="a7x-95-QxA" firstAttribute="top" secondItem="rQ9-2r-WBj" secondAttribute="bottom" id="4U7-bh-2lm"/>
+                            <constraint firstItem="rQ9-2r-WBj" firstAttribute="top" secondItem="Tub-eC-pVT" secondAttribute="top" id="9xp-9e-E2e"/>
+                            <constraint firstAttribute="trailing" secondItem="rQ9-2r-WBj" secondAttribute="trailing" id="BD0-tu-gOV"/>
+                            <constraint firstItem="a7x-95-QxA" firstAttribute="trailing" secondItem="rQ9-2r-WBj" secondAttribute="trailing" id="IlC-Te-GqE"/>
+                            <constraint firstItem="a7x-95-QxA" firstAttribute="top" secondItem="Tub-eC-pVT" secondAttribute="top" constant="165" id="Pmz-XC-4mb"/>
+                            <constraint firstItem="a7x-95-QxA" firstAttribute="bottom" secondItem="4pI-cJ-YKX" secondAttribute="top" id="dT1-eE-N4V"/>
+                            <constraint firstAttribute="trailing" secondItem="a7x-95-QxA" secondAttribute="trailing" id="m6c-Mi-XpI"/>
+                            <constraint firstItem="a7x-95-QxA" firstAttribute="top" secondItem="rQ9-2r-WBj" secondAttribute="bottom" id="sPg-oM-GDN"/>
+                            <constraint firstItem="rQ9-2r-WBj" firstAttribute="leading" secondItem="Tub-eC-pVT" secondAttribute="leading" id="ugt-HS-8ZJ"/>
+                            <constraint firstItem="a7x-95-QxA" firstAttribute="leading" secondItem="rQ9-2r-WBj" secondAttribute="leading" id="vt4-yU-6Uf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvH-kZ-Cqd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8d-Oq-qqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196.25" y="132.04225352112675"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hW8-4H-D2P">
+            <objects>
+                <viewController id="wwP-PP-MNr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FJP-zz-eKp"/>
+                        <viewControllerLayoutGuide type="bottom" id="6MA-T3-rb1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6r8-cL-OPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOE-mg-sRp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
